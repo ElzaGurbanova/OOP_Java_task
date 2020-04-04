@@ -5,16 +5,17 @@ public class Main {
     public static void main(String[] args) {
 
         UniEntranceExam uee1 = new UniEntranceExam(288.6f, 394.3f, 400f, 688.6f);
-	    Students student1 = new Students("Elza", "Gurbanova", "Freshman", 0, 0,uee1);
+	    Students student1 = new Students("Elza", "Gurbanova", "Freshman",0, 0, uee1);
 
         UniEntranceExam uee2 = new UniEntranceExam(200f, 300f, 350f, 550f);
-        Students student2 = new Students("Jane", "Smith", "Freshman", 0, 0, uee2);
+        Students student2 = new Students("Jane", "Smith", "Freshman",0, 0, uee2);
 
 
 
-        System.out.println(student1.name);
-        System.out.println(student1.surname);
-        System.out.println(student1.status);
+
+        System.out.println(student1.getName());
+        System.out.println(student1.getSurname());
+        System.out.println("The status of the student is " + student1.status);
         String graduationScore = student1.uee.showingGraduationExamScore();
         System.out.println(graduationScore);
         String firstExamScore = student1.uee.showingFirstExamScore();
@@ -34,9 +35,15 @@ public class Main {
         student1.scholarship();
 
 
-        System.out.println(student2.name);
-        System.out.println(student2.surname);
-        System.out.println(student2.status);
+        System.out.println(student2.getName());
+        System.out.println(student2.getSurname());
+        student2.setName("Kate");
+        student2.setSurname("Adams");
+
+        System.out.println("After adjustment...");
+        System.out.println(student2.getName());
+        System.out.println(student2.getSurname());
+        System.out.println("The status of the student is " + student2.status);
 
         student2.study();
         student2.makingPresentation();

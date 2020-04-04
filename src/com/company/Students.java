@@ -7,20 +7,33 @@ import static javafx.scene.input.KeyCode.U;
 public class Students {
 
 
-    String name, surname;
+    private String name;
+    private String surname;
     static String status;
-    float preExamScore;
+    static float preExamScore;
     float overallScore;
     UniEntranceExam uee;
 
 
-    Students(String n, String l, String s, int p, int o, UniEntranceExam U){
+    Students(String n, String l, String s, float p , float o, UniEntranceExam U){
         name = n;
         surname = l;
         status = s;
         preExamScore = p;
         overallScore = o;
         uee = U;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getSurname(){
+        return surname;
+    }
+    public void setSurname(String surname){
+        this.surname = surname;
     }
 
 
