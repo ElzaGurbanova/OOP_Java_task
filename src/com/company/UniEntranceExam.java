@@ -9,10 +9,10 @@ public class UniEntranceExam {
     String level;
 
 
-    public UniEntranceExam (float G, float FE, float SE, float T ){
+    public UniEntranceExam (float G, float F, float S, float T ){
         scoreOfTheGraduationExam = G;
-        scoreOfTheFirstExam = FE;
-        scoreOfTheSecondExam = SE;
+        scoreOfTheFirstExam = F;
+        scoreOfTheSecondExam = S;
         totalScore = T;
     }
 
