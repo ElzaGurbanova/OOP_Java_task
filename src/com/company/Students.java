@@ -11,7 +11,7 @@ public class Students {
     private String surname;
     static String status;
     static float preExamScore;
-    float overallScore;
+    private float overallScore;
     UniEntranceExam uee;
 
 
@@ -35,6 +35,13 @@ public class Students {
     public void setSurname(String surname){
         this.surname = surname;
     }
+    public float getOverallScore() {
+        return overallScore;
+    }
+    public void setOverallScore(float overallScore){
+        this.overallScore = overallScore;
+    }
+
 
 
     void study(){

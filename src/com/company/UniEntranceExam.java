@@ -2,18 +2,34 @@ package com.company;
 
 public class UniEntranceExam {
 
-    float scoreOfTheGraduationExam;
-    float scoreOfTheFirstExam;
-    float scoreOfTheSecondExam;
-    float totalScore;
-    String level;
+    private float scoreOfTheGraduationExam;
+    private float scoreOfTheFirstExam;
+    private float scoreOfTheSecondExam;
+    private float totalScore;
+    private String level;
 
 
-    public UniEntranceExam (float G, float F, float S, float T ){
+    public UniEntranceExam (float G, float F, float S, float T , String L){
         scoreOfTheGraduationExam = G;
         scoreOfTheFirstExam = F;
         scoreOfTheSecondExam = S;
         totalScore = T;
+        level = L;
+    }
+    public float getScoreOfTheGraduationExam(){
+        return scoreOfTheGraduationExam;
+    }
+    public float getScoreOfTheFirstExam(){
+        return scoreOfTheFirstExam;
+    }
+    public float getScoreOfTheSecondExam(){
+        return scoreOfTheSecondExam;
+    }
+    public float getTotalScore(){
+        return totalScore;
+    }
+    public String getLevel(){
+        return level;
     }
 
     String calculatingLevel() {
